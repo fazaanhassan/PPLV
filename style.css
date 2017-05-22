@@ -1,0 +1,364 @@
+/* styles to help debug - borders around elements */
+/*
+.row > div {
+	border: 1px solid black;
+}
+
+.navbar {
+	border: 1px solid black;
+
+
+}
+
+.footer {
+	border: 1px solid black;
+}
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:700');
+
+.beauty-text {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.img-circle {
+
+	border-radius: 50%;
+
+}
+
+.footer {
+	margin-left: 0vw;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	width: 100.85vw;
+	z-index: 12;
+	position: relative;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: #f2f2f2;
+	position:relative;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Video Editing rules */
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
+
+
+.col-md-12.profiles > div {
+	padding: 10px;
+	margin: 17px;
+    
+
+
+}
+
+
+
+
+/* Styles for incontent editing */
+.divider {
+	width: 100;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-left: -30px;
+	margin-right: -30px;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+
+}
+
+.separator {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 20px;
+	background-color: #E0F7FA;
+
+}
+
+
+div#hero > div{
+	padding: 200;
+	text-align: center;
+	background:
+
+		linear-gradient(
+			rgba(33, 150, 243, 0.94),
+			rgba(33, 150, 243, 0.94)
+
+		),
+
+	url(./img/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#hero > div {
+	height: 100%;
+
+}
+
+
+
+#main > .row > div > span {
+	position: absolute;
+	top: 90%;
+	color: white;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main > .row > div > a {
+	margin-top: 30px;
+}
+
+#main >.row > div{
+	width: 100.85vw;
+	margin-left: -50vw;
+	left: 50%;
+	font-family: 'Raleway', sans-serif;
+}
+
+#main {
+	margin-top: 50px;
+}
+
+#content {
+	margin-top: 50px;
+}
+
+
+/*screen specific options:*/
+
+	/* For v small */
+#main >.row > div {
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+#content >.row > div {
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-top: 125px;
+	padding-bottom: 125px;
+}
+div.mainPage {
+		text-align: center;
+		height: 200;
+		margin: 0;
+		padding-top: 50vw;
+		padding-bottom: 50vw;
+}
+	/*small sized screens */
+@media only screen and (min-width : 768px) {
+	#main >.row > div {
+		padding-left: 20vw;
+		padding-right: 20vw;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	#content >.row > div {
+		padding-left: 5vw;
+		padding-right: 5vw;
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+
+	.mainPage {
+		padding-top: 60vw;
+		padding-bottom: 60vw;
+	}
+
+}
+	/*Medium sized screens*/
+@media only screen and (min-width: 992px) {
+	#main >.row > div {
+		padding-left: 10vw;
+		padding-right: 10vw;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	#main > .row > div > a {
+		margin-top: 50px;
+	}
+
+	#content >.row > div {
+		padding-left: 5vw;
+		padding-right: 5vw;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	#content > .row > div > a {
+		margin-top: 50px;
+	}
+
+	.mainPage {
+		padding-top: 60vw;
+		padding-bottom: 60vw;
+	}
+	#main > .row > #about{
+		margin-left: 0;
+		width: 100;
+		margin-right: 0;
+	}
+}
+
+
+/* Shadow Settings - works provided z-indexes are specified */
+
+#navi {
+	-webkit-box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.22);
+	-moz-box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.22);
+	box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.22);
+}
+
+.shadowLight {
+	-webkit-box-shadow: 0px 2px 13px 3px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 2px 13px 3px rgba(0,0,0,0.126);
+	box-shadow: 0px 2px 13px 3px rgba(0,0,0,0.16);
+}
+
+.shadowHeavy {
+	-webkit-box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.33);
+	-moz-box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.33);
+	box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.33);
+}
+
+
+
+
+
+/* Theme Colors Material Blue */
+
+.primaryBlue {
+	background-color: #2196F3;
+}
+
+.primaryBlue > h1 {
+	color: #FFFFFF;
+}
+
+.primaryBlue > h2 {
+	color: #FFFFFF;
+}
+
+.primaryBlue > h3 {
+	color: #FFFFFF;
+}
+
+.primaryBlue > p {
+	color: #BBDEFB;
+}
+
+.buttonBlue {
+	background-color: #03A9F4;
+}
+
+a.buttonBlue{
+	color: #ffffff;
+}
+
+
+.primaryText {
+	color:#212121;
+}
+
+.secondaryText {
+	color: #757575;
+}
+
+.navBlue {
+	background-color: #1976D2;
+	color: #FFFFFF;
+}
+
+.navBlue > li > a{
+	color: #FFFFFF;
+}
+
+.navBlue > li > a:hover {
+	color:#212121;
+}
+
+.contentGray {
+	background-color: #E3F2FD;
+	color: #212121;
+}
+
+.active {
+	font-size: 1.5em;
+}
+
+
+
+/* Fixes for Bootstrap nuances */
+
+@media only screen and (min-width : 988px) {
+#projects.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#profiles.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+    align-content: center;
+}
+
+
+
+}
+
+@media only screen and (min-width : 480px) {
+#projects.row > .impact {
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+}

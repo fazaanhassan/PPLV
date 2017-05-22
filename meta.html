@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html style="background-color: #BBDEFB">
+<head>
+<title>PPLV - About</title>
+
+<!-- Viewport settings, makes phone resposive displays -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<link rel="icon" href="./img/favi.png">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<!-- custom theme -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!--Js Plugins -->
+
+<script src="./js/jquery.transit.min.js"></script>
+
+
+
+
+<!--Smooth Transition JS -->
+<script>
+	$(document).ready(function() {
+		effect = $(".animate").transition({opacity: 0}, 0);
+
+
+		effect.each(function(i) {
+				a = $(this).offset().top + $(this).height()/2;
+				b = $(window).scrollTop() + $(window).height();
+				if (a < b) $(this).transition({opacity:  1}, 500);
+		});
+
+	$(window).scroll(function(d,h) {
+	    effect.each(function(i) {
+	        a = $(this).offset().top + $(this).height()/2;
+	        b = $(window).scrollTop() + $(window).height();
+	        if (a < b) $(this).transition({opacity:  1}, 500);
+	    });
+	});
+	$(document).click(function(e) {
+	    if (!$(e.target).is('a')) {
+	        $('.collapse').collapse('hide');
+	    }
+	});
+
+
+effectslow = $(".animate-slow").transition({opacity: 0}, 0);
+effectslow.each(function(i) {
+		a = $(this).offset().top - $(this).height()/4;
+		b = $(window).scrollTop() + $(window).height();
+		if (a < b) $(this).transition({opacity:  1}, 500);
+});
+
+$(window).scroll(function(d,h) {
+	effectslow.each(function(i) {
+			a = $(this).offset().top - $(this).height()/4;
+			b = $(window).scrollTop() + $(window).height();
+			if (a < b) $(this).transition({opacity:  1}, 500);
+	});
+});
+
+
+
+
+
+
+
+	});
+</script>
+
+<style>
+dd {
+	padding: 20px;
+	text-align: center;
+}
+
+dt {
+	text-align: left;
+}
+dl {
+	padding-top: 10px;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div class="navbar navbar-fixed-top">
+	<div class="container-fluid navBlue"  id="navi" style="z-index: 12;">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcollapse" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span> Menu </span>
+			</button>
+			<a class="navbar-brand navBlue" href="index.html" class="transition">PPLV</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navcollapse">
+			<ul class="nav navbar-nav navbar-center">
+				<li class="dropdown"></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right navBlue" style="text-align: center;">
+				<li><a href="index.html" class="transition">Home</a></li>
+
+
+				<li><a href="index.html#about" class="transition">About the Area</a></li>
+
+				<li><a href="history.html" class="transition">History of Area</a></li>
+
+				<li><a href="research.html" class="transition">UCL Research Team</a></li>
+
+				<li><a href="research.html#impact" class="transition">Impact</a></li>
+
+				<li class="active"><a href="meta.html" class="transition">About this site</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- site content -->
+<div class="container shadowLight" id="content" style="background-color: #ffffff;">
+	<!-- hero image - what is PPLV + explanation -->
+	<div id="main" style="margin-top: 0px;">
+	<div class="row" id="aboutus">
+		<div class="col-md-12 text-center shadowLight primaryBlue" style="z-index: 10;">
+			<h1> About this Site</h1>
+			<p>This website is aimed at increasing awareness for this field - to us, it seems a shame that such an integral field should lack any proper public exposure.<br>
+			It was made as part of UCL's Integrated Engineering Project -  an attempt by the university to allow it's students to get a better understanding of the research that it does.</br>
+			We hope to take you through an indepth tour of the area, from an intriguing exploration of PPLV's history, to highlighting any important contributors. We'd also like to indicate our very own University's (UCL) contributions to this field, and finally wrap it up with an overview of PPLV's impact on the world.</p>
+			<h3>This page is about the site itself (+ it's authors), and citations for the information.</h3>
+
+		</div>
+
+	</div>
+	</div>
+
+
+	<div class="row shadowLight" id="citations">
+		<div class="col-md-12 text-center animate" style="z-index: 4; background-color: #FFFFFF;">
+			<h2>References</h2>
+			<p style="font-size: 1.2em; line-height: 2.2em; padding: 5px">This site combines information from various sources to provide a hollistic explanation of Computer Science. We've added a comprehensive list of these sources below (organised by which page they're on):</p>
+		</div>
+
+		<div class="col-md-12 contentGray animate" style="z-index: 4; padding-top: 10px; padding-bottom: 10px;" id="h4-about">
+			<center>
+			<h3>About PPLV Section - References</h3>
+			<dl class="">
+				<dt><h4 style="text-align: center;">Images</h4></dt>
+				<dd>All Images on the page are made by authors of this website and are licensed under Creative Commons</dd>
+				<dt class="" style=""><h4>[1] PPLV Research Area Structure</h4></dt>
+				<dd class=""><a href="http://pplv.cs.ucl.ac.uk/welcome/">UCL, Dept. of Computer Science. Programming Principles, Logic and Verification Group, Welcome. Webpage. Retrieved November 2016</a></dd>
+				<dt><h4>[2] Computational Logic</h4></dt>
+				<dd><a href="http://plato.stanford.edu/entries/computer-science/">Turner, Raymond. The Philosophy of Computer Science. The Stanford Encyclopedia of Philosophy (Spring 2016 Edition), Edward N. Zalta (ed.). Retrieved November 2016.</a></dd>
+			</dl>
+			</center>
+		</div>
+
+		<div class="col-md-12 animate-slow" style="z-index: 4; background-color: #FFFFFF; padding-top: 10px; padding-bottom: 10px;" id="h4-history">
+			<center>
+			<h3>History of PPLV Section - References</h3>
+			<dl class="">
+				<dt><h4 style="text-align: center;">Images</h4></dt>
+				<dd>All Images on the page are made by authors of this website and are licensed under Creative Commons</dd>
+				<dt><h4>[1] - General History of Theoretical Computer Science and Logic</h4></dt>
+				<dd><a href="http://plato.stanford.edu/entries/computing-history/">B. Jack Copeland. Modern History of Computing. The Stanford Encyclopedia of Philosophy (Fall 2014 Edition), Edward N. Zalta (ed.). Retrieved November 2016.</a></dd>
+				<dd>John E. Savage, Alan L. Selman, Carl Smith. "History and Contributions of Theoretical Computer Science". In Advances in Computers: Volume 55. 2002:171-183</dd>
+				<dd>Jordi Vallverdú. Kairos. Journal of Philosophy & Science 9: 2014: 47-51</dd>
+				<dd><a href="http://www.newworldencyclopedia.org/entry/History_of_logic#General_Philosophy_Sources">New World Encylopedia. History of Logic. Web Encyclopedia Article. Retrieved November 2016.</a></dd>
+
+				<dt><h4>[2] - Early Mathematical Logic</h4></dt>
+				<dd>Davis, Martin. "Influences of Mathematical Logic on Computer Science". In Rolf Herken. The Universal Turing Machine. Springer Verlag.</dd>
+				<dd><a href="http://plato.stanford.edu/entries/goedel-incompleteness/">Panu Raatikainen. Godel's Incompleteness Theorems.The Stanford Encyclopedia of Philosophy (Fall 2014 Edition), Edward N. Zalta (ed.). Retreived November 2016.</a></dd>
+
+				<dt><h4>[3] - Boolean Logic and Early Computers</h4></dt>
+				<dd><a href="http://plato.stanford.edu/entries/boole/">Stanley Burris. George Boole.The Stanford Encyclopedia of Philosophy (Fall 2014 Edition), Edward N. Zalta (ed.). Retrieved November 2016.</a></dd>
+				<dd>Bruce Collier, James MacLahlan. Charles Babbage: And the Engines of Perfection. Oxford University Press. 2000:9-17,28-30</dd>
+				<dd>Erico Marui Guizzo. The Essential Message: Claude Shannon and the Making of Information Theory. M.S. Thesis, Massachusetts Institute of Technology, Dept. of Humanities. 2003.</dd>
+
+				<dt><h4>[4] - Formalization of Algorithms</h4></dt>
+				<dd>A. M. Turing. On Computable Numbers with an application to the EntscheidungsProblem. November 1936:230-233.</dd>
+				<dd><a href="http://www.iep.utm.edu/lambda-calculi/">Shane Steinert-Threlkeld. Lambda Calculi. Internet Encyclopedia of Philosophy. Retrieved November 2016.</a></dd>
+
+				<dt><h4>[5] - NP Completeness and Formal Semantics</h4></dt>
+				<dd>S. Dasgupta, C. H. Papadimitriou, U. V. Vazirani. Algorithms - Chapter 8: NP-Complete Problems. July 2006:247-250</dd>
+				<dd>Barbara H. Partee. The History of Formal Semantics. July 2015</dd>
+
+
+				<dt><h4>[6] - Separation Logic and Logic of Bunched Implications</h4></dt>
+				<dd>Peter W. O'Hearn, David J. Pym. Bulletin of Symbolic Logic. June 1999.</dd>
+				<dd>Peter W. O'Hearn. Separation Logic Tutorial. December 2008. </dd>
+			</dl>
+		</center>
+		</div>
+
+		<div class="col-md-12 contentGray animate-slow" style="z-index: 4; padding-top: 10px; padding-bottom: 10px;" id="h4-research">
+					<center>
+			<h3>UCL PPLV Research Section - References</h3>
+			<dl class="">
+				<dt><h4>[1] David Pym</h4></dt>
+				<dd><a href="http://www0.cs.ucl.ac.uk/staff/D.Pym/">UCL, Dept. of Computer Science. Professor David J. Pym. Webpage. Retrieved November 2016.</a></dd>
+				<dt><h4>[2] Peter H. O'Hearn</h4></dt>
+				<dd><a href="http://www0.cs.ucl.ac.uk/staff/P.OHearn/">UCL, Dept. of Computer Science. Peter O'Hearn. Webpage. Retrieved November 2016.</a></dd>
+				<dt><h4>[3] Boosted Auto Verification UCL Research Project</h4></dt>
+				<dd><a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/K040049/1">Engineering and Physical Sciences Research Council. Details of Grant - Boosted Automated Verification Using Cyclic Proof. Webpage. Retrieved November 2016.</a></dd>
+				<dt><h4>[4] Kernel Code in Operating Systems</h4></dt>
+				<dd>Andrew S. Tanenbaum. Modern Operating System. (3rd ed.) 2009:1-18.</dd>
+				<dt><h4>[5] Program Verification UCL Research</h4></dt>
+				<dd><a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/K032542/1">Engineering and Physical Sciences Research Council. Details of Grant - Program Verification Techniques for Understanding Security Properties of Software. Webpage. Retrieved November 2016</a></dd>
+				<dd><a href="https://code.facebook.com/posts/1648953042007882/open-sourcing-facebook-infer-identify-bugs-before-you-ship/">Cristiano Calcagno, Dino Distefano, Peter O'Hearn. Open-Sourcing Facebook Infer: Identify bugs before you ship. Facebook, F-Code. Retrieved November 2016.</a></dd>
+				<dt><h4>[6] Algebra and Logic for Policy and Utility UCL Research</h4></dt>
+				<dd><a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/K033042/1">Engineering and Physical Sciences Research Council. Details of Grant - Algebra and Logic for Policy and Utility in Information Security. Webpage. Retrieved November 2016</a></dd>
+				<dt><h4>[7] Self-Driving Car Production </h4></dt>
+				<dd><a href="https://www.google.com/selfdrivingcar/">Google. Self Driving Car Project. Retrieved November 2016.</a></dd>
+			</dl>
+		</center>
+		</div>
+
+
+
+	</div>
+
+	<div class="row animate" id="contact">
+		<div class="col-md-12 text-center shadowLight" style="z-index: 4; background-color: #FFFFFF;">
+			<h3>Contact Us</h3>
+			<p>You can contact the team at:
+			</br>
+			Fazaan: zcabfha@ucl.ac.uk</br>
+			Affiq: zcabhai@ucl.ac.uk</br>
+			Louis: zcablef@ucl.ac.uk</br>
+			Kiran: zcabftr@ucl.ac.uk
+
+				</p>
+
+		</div>
+	</div>
+
+	<div class="row animate">
+		<div class="col-md-12 text-center shadowLight" style="z-index: 4; background-color: #FFFFFF;">
+			<h3>That's all folks!</h3>
+			<p style="font-size: 1.3em; line-height: 2.2em; padding: 5px">We hope you've enjoyed your stay on our website. This has been our first attempt at web development, and we found the process to be thoroughly enjoyable.
+			</br>
+			Hopefully, we've managed to give you an understanding of what PPLV is, and why it's important.</br>
+			Below are a few links that are good sources to find out more about this subject:</p>
+			<div class="separator" style="line-height:2em">
+			<a href="http://fbinfer.com/">Facebook INFER</a>
+			</br>
+			<a href="http://pplv.cs.ucl.ac.uk/welcome/">UCL PPLV department Website</a>
+			</br>
+			<a href="#"></a>
+		</div>
+			<a class="btn btn-lg buttonBlue shadowHeavy" href="index.html">Back to Start</a>
+		</div>
+	</div>
+</div>
+
+<div class="footer shadowLight navBlue" style="z-index: 12; margin-left: -50;">
+<div class="row">
+	<div class="col-md-6 col-xs-9 hidden-xs" style="color: #ffffff;">
+		<h4>Site Navigation</h4>
+
+
+		<div class="col-md-3 col-xs-3" style="color: #ffffff; margin-left: 20px; padding-right: 0px;">
+			<p><a href="index.html" style="color: #ffffff;" class="transition">Home</a></p>
+			<p><a href="meta.html#aboutus" style="color: #ffffff;" class="transition">About Us</a></p>
+		</div>
+
+		<div class="col-md-3 col-xs-3" style="color: #ffffff;">
+			<p><a href="research.html" style="color: #ffffff;" class="transition">UCL Research Team</a></p>
+			<p><a href="meta.html#contact" style="color: #ffffff;" class="transition">Contact Us</a></p>
+		</div>
+
+		<div class="col-md-3 col-xs-3" style="color: #ffffff;" class="transition">
+			<p><a href="meta.html#citations" style="color: #ffffff;" class="transition">References Page</a></p>
+		</div>
+	</div>
+
+
+
+	<div class="visible-xs col-xs-12 col-sm-12" style="color: #ffffff;">
+		<h4 style="text-align: center;">Site Navigation</h4>
+		<ul style="list-style: none; text-align:center; margin-left:-30px;">
+
+
+
+
+			<li><a href="index.html" style="color: #ffffff;" class="transition">Home</a></li>
+			<li><a href="meta.html#aboutus" style="color: #ffffff;" class="transition">About Us</a></li>
+
+
+			<li><a href="research.html" style="color: #ffffff;" class="transition">UCL Research Team</a></li>
+			<li><a href="meta.html#contact" style="color: #ffffff;" class="transition">Contact Us</a></li>
+
+
+
+			<li><a href="meta.html#citations" style="color: #ffffff;" class="transition">References Page</a></li>
+
+
+	</ul>
+
+
+
+	</div>
+
+	<div class="col-xs-12 visible-xs center-block" style="text-align: center; padding: 0vw 30vw;">
+	<h3>Made as part of UCL's IEP</h3>
+	<p>Creative Commons License</p>
+	</div>
+
+
+
+		<div class="row">
+			<div class="col-xs-3 hidden-xs pull-right">
+			<h3>Made as part of UCL's IEP</h3>
+			<p>Creative Commons License</p>
+			</div>
+
+		</div>
+
+
+
+</div>
+</div>
+</body>
+</html>

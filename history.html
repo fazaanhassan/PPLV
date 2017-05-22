@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html style="background-color: #BBDEFB">
+<head>
+<title>PPLV - History</title>
+
+<!-- Viewport settings, makes phone resposive displays -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+
+<!-- Website Favicon -->
+<link rel="icon" href="./img/favi.png">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Js Plugin Files -->
+<script src="./js/jquery.transit.min.js"></script>
+
+
+
+
+<!-- custom theme -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<!--Smooth Transition JS -->
+<script>
+	$(document).ready(function() {
+		effect = $(".animate").transition({opacity: 0}, 0);
+
+	$(window).scroll(function(d,h) {
+	    effect.each(function(i) {
+	        a = $(this).offset().top + $(this).height()/2;
+	        b = $(window).scrollTop() + $(window).height();
+	        if (a < b) $(this).transition({opacity:  1}, 500);
+	    });
+	});
+	$(document).click(function(e) {
+	    if (!$(e.target).is('a')) {
+	        $('.collapse').collapse('hide');
+	    }
+	});
+
+	});
+</script>
+
+
+<!-- Specific style just for this page -->
+
+
+<style>
+	@media only screen and (min-width: 992px), only screen and (min-width: 768) {
+			.divider {
+				z-index: 8;
+				margin-right: 230px;
+				margin-bottom: 0px;
+				font-family: 'Open Sans', sans-serif;
+
+			}
+
+			.separator {
+				z-index: 9;
+				margin-right: 230px;
+				margin-left: -30px;
+				font-family: 'Open Sans', sans-serif;
+			}
+			.beauty-text {
+				line-height: 2em;
+				font-size: 1.2em;
+				}
+
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+<body>
+
+<!-- Navigation bar -->
+<!-- Navigation bar -->
+<div class="navbar navbar-fixed-top">
+	<div class="container-fluid navBlue"  id="navi" style="z-index: 12;">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcollapse" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span> Menu </span>
+			</button>
+			<a class="navbar-brand navBlue" href="index.html" class="transition">PPLV</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navcollapse">
+			<ul class="nav navbar-nav navbar-center">
+				<li class="dropdown"></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right navBlue" style="text-align: center;">
+				<li><a href="index.html" class="transition">Home</a></li>
+
+
+				<li><a href="index.html#about" class="transition">About the Area</a></li>
+
+				<li class="active"><a href="history.html" class="transition">History of Area</a></li>
+
+				<li><a href="research.html" class="transition">UCL Research Team</a></li>
+
+				<li><a href="research.html#impact" class="transition">Impact</a></li>
+
+				<li><a href="meta.html" class="transition">About this site</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<!-- site content -->
+<div class="container" id="content">
+	<!-- hero image - what is PPLV + explanation -->
+	<div id="main" style="margin-top: 0px;">
+	<div class="row">
+		<div class="col-md-12 text-center shadowLight primaryBlue" style="z-index: 10;">
+
+			<h1>History of the Area<sup>[<a href="meta.html#h4-history">1</a>]</sup></h1>
+			<p style="font-size: 1.14em; line-height: 1.7em;">To provide some context to the importance of PPLV, we've included a <b>very brief</b> overview of the history of PPLV, from the Birth of Computational Analysis, to the creation of Separation Logic.</p>
+			<p ><small><i>Note: As PPLV is heavily focused on Logic in Computer Science - a history of PPLV would be incomplete without any mention of the history of Logic - thus, for the sake of completeness, we've also included important events in the history of Logic.</i></small></br></p>
+			<h4>Let's get started...</h4>
+
+		</div>
+
+	</div>
+	</div>
+
+	<!--whitepanel-->
+	<div class="row">
+		<div class="col-md-12 shadowLight beauty-text" style="z-index: 8; background-color: #FFFFFF;">
+
+			<img src="./img/logic.png" class="img-fluid shadowLight img-circle center-block visible-xs" style="height:200px; width: 200px; margin-bottom: 20px;"></img>
+			<img src="./img/logic.png" class="shadowLight img-circle pull-right hidden-xs" style="height:200px; width:200px; margin-bottom: 30px; margin-left: 10px;"></img>
+
+
+			<h3 class="beauty-text">The Birth of Logic to the introduction of Modern Logic</h3>
+			<p>500 B.C - 19<sup>th</sup> Century
+			</br>
+			</br>
+			After initially being devised by Ancient Greeks as a tool for <strong><i>systematically</i></strong> determining the victor in debates, and then <i>developed upon</i> by later civilisations throughout the middle ages, the concept of Traditional Logic was <b>established</b> as a <b>fundamental field</b> of study. However, following a <i>decrease in popularity</i> over the 18th Century, Scholars studying <b>recent innovations</b> in the field of Mathematics, began developing the foundations of Modern Logic, which rather than focusing on producing <i>abstract logical arguments</i>, applied <b>rigorous mathematical constraints</b> to <b>logic</b>.
+			</p>
+
+		</div>
+	</div>
+
+	<!--bluepanel-->
+	<div class="row">
+		<div class="col-md-12 shadowLight animate beauty-text" style="z-index: 6; background-color: #d1ecff">
+
+			<img src="./img/Operators.png" class="img-fluid shadowLight img-circle center-block visible-xs animate" style="height:200px; width: 200px; margin-bottom: 20px;"></img>
+			<img src="./img/Operators.png" class="shadowLight img-circle pull-right hidden-xs animate" style="height:200px; width:200px; margin-bottom: 30px;"></img>
+
+
+		<div class="divider shadowLight">
+			<h3>Advancements in Mathematical Logic <sup>[<a href="meta.html#h4-history">2</a>]</sup></h3>
+		</div>
+		<div class="separator shadowLight">
+			<p> 19th Century to 20th Century
+			</br>
+			</br>
+			Following the development of the foundations of Modern Logic, <b>further advances</b> were made by <i>interweaving <b>mathematical</b> and <b>logical</b> concepts</i> (such as <b>set theory</b>). This also prompted an <i>increase</i> in the <b>standard to which mathematical proofs were judged against</b> - culminating in <b>Godel's incompleteness theorem</b> - which proved that certain (axiomatic) systems of logic <b>would not be able to prove</b> their own axioms, in <b>retaliation</b> to mathematicians of the time <i>attempting to prove</i> that every true theorem was provable.</p>
+		</div>
+		</div>
+	</div>
+
+	<!--whitepanel-->
+	<div class="row">
+		<div class="col-md-12 shadowLight animate beauty-text" style="z-index: 8; background-color: #FFFFFF;">
+
+			<img src="./img/gates.png" class="img-fluid shadowLight img-circle center-block visible-xs animate" style="height:200px; width: 200px; margin-bottom: 20px;"></img>
+			<img src="./img/gates.png" class="shadowLight img-circle pull-right hidden-xs animate" style="height:200px; width: 200px; margin-bottom: 30px;"></img>
+
+
+			<h3>Introduction of Boolean Algebra through to the development of Computers<sup>[<a href="meta.html#h4-history">3</a>]</sup></h3>
+			<p>1854 -1937
+			</br>
+			</br>
+			Following the <b>increasing levels of scrutiny</b> to which current mathematical concepts were being considered, George Boole produced a <b>new</b> logic field, which in some ways <i>attempted to formalize</i> older logical concepts, such as <b>Aristotle's system of logic</b>, where the outcomes of expressions were only either <b>true</b> or <b>false</b>. During this period, Charles Babbage was investigating how mechanical systems could be set up to <b>compute the results</b> of <b>theoretical concepts</b>, the results of which culminated in his blueprints for a <b>difference machine</b>. Charles Babbage also worked with <b>Ada Lovelace</b>, who, based off her experience working on the difference machine, went on to <b>construct</b> the <b>first ever algorithm</b> designed for a computer - one to <b>calculate Bernoulli numbers</b>. </br>
+			Throughout the 19<sup>th</sup> Century, research into <b>electrical circuits</b> increased, and scholars <i>began to see</i> how <b>certain</b> logical structures could <b>recreate</b> logical expressions - this culminated in <b>Claude.E Shannon's </b>Invention of <b>Signal Flow Graphs</b> (in his paper titled "The Theory and Design of Linear Differential Equation Mechanics"), which <b>allowed boolean logic</b> to be used to <b>describe circuits</b>.
+			</p>
+
+		</div>
+	</div>
+
+	<!--bluepanel-->
+	<div class="row">
+		<div class="col-md-12 shadowLight animate beauty-text" style="z-index: 6; background-color: #d1ecff">
+
+			<img src="./img/computer.png" class="img-fluid shadowLight img-circle center-block visible-xs animate" style="height:200px; width: 200px; margin-bottom: 20px;"></img>
+			<img src="./img/computer.png" class="shadowLight img-circle pull-right hidden-xs animate" style="height:200px; width:200px; margin-bottom: 30px;"></img>
+
+
+		<div class="divider shadowLight">
+			<h3>Birth of Computational Logic <sup>[<a href="meta.html#h4-history"?>4</a>]</sup></h3>
+		</div>
+		<div class="separator shadowLight">
+			<p> 1920 - 1944
+			</br>
+			Following <i>advances in the complexity</i> of such number-crunching machines, <b>Alan Turing</b> and <b>Alonzo Church</b> independently began <b>formalizing the concept</b> of an <b>algorithm</b> and were able to prove that provided it were <i>capable of a certain set of actions</i>, a computer could <b>compute any algorithm</b> given enough <i>time</i> and <i>resources</i>. Based off the findings of this research, Alan Turing went on to produce an <b>abstract description</b> of a <b>computational machine</b>, a model which determined <i>which problems</i> could be solved <b>algorithmically</b>.</p>
+		</div>
+		</div>
+	</div>
+
+	<!--whitepanel-->
+
+	<!--whitepanel-->
+	<div class="row">
+		<div class="col-md-12 shadowLight animate beauty-text" style="z-index: 8; background-color: #FFFFFF; ">
+
+
+			<img src="./img/puzzle.png" class="img-fluid shadowLight img-circle center-block visible-xs animate" style="height:200px; width: 200px; margin-bottom: 20px;"></img>
+			<img src="./img/puzzle.png" class="shadowLight img-circle pull-right hidden-xs animate" style="height:200px; width:200px; margin-bottom: 30px;  margin-left: 10px;"></img>
+
+
+			<h3>NP Completeness and Formal Semantics</h3>
+			<p>1960s - 1970s
+			</br>
+			</br>
+			Building on the analysis of what is and isn't possible <i>for a computer to calculate</i>, the <b>concept of NP-completeness</b> was <b>developed</b> by researchers in the <b>US</b> and <b>USSR</b><sup>[<a href="meta.html#h4-history">5</a>]</sup>. During this period, the <b>field of formal semantics</b> was established as a more <b>rigorous method</b> of describing the <b>structure</b> of human languages - the techniques developed in this field <i>were then adapted</i> to <b>describe computational languages</b> - this produced <b>axiomatic semantics</b> (describing programs by specifying properties which hold before and after a program has been executed) <i>amongst other <b>new</b> techniques</i>. </br>
+			</p>
+
+		</div>
+	</div>
+
+	<!--bluepanel-->
+	<div class="row">
+		<div class="col-md-12 shadowLight animate beauty-text" style="z-index: 6; background-color: #d1ecff;">
+
+			<img src="./img/Idea.png" class="img-fluid shadowLight img-circle center-block visible-xs animate" style="height:200px; width: 200px; margin-bottom: 20px;"></img>
+			<img src="./img/Idea.png" class="shadowLight img-circle pull-right hidden-xs animate" style="height:200px; width:200px; margin-bottom: 30px;"></img>
+
+
+
+		<div class="divider shadowLight">
+			<h3>Logic of Bunched Implications and Separation Logic<sup>[<a href="meta.html#h4-history">6</a>]</sup></h3>
+		</div>
+		<div class="separator shadowLight">
+			<p> 1999 to Present
+			</br>
+			In order to <i>more accurately describe</i> abstract computational systems, <b>Peter O'Hearn</b> and <b>David Pym</b> at <b>UCL</b> developed <b>Bunched Logic</b> (introduced in their paper "<i><small>The Logic of Bunched Implications</small></i>"). Bunched logic allows for the <i>in-depth analysis</i> of <b>resource composition</b>, which facilitates more accurate analysis of computer systems. This Logic model then allowed another group of researchers (including Peter O'Hearn) to develop <b>Separation Logic</b> - a system that is now frequently used in industry to <b>verify</b> programs which use <b>mutable memory</b> structures. This development has had a <b>huge impact</b> on the accuracy of <b>automated verification</b> techniques, increasing the overall <b>reliability</b> of modern programs.
+		</p>
+		</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- get started -->
+	<div class="row hidden-xs beauty-text">
+		<div class="col-md-12 text-center mainPage animate shadowLight" style="z-index: 4; background-color: #FFFFFF;">
+			<h3 class="animate">Closing words</h3>
+
+			<p  style="font-size: 1.3em; line-height: 2.2em; padding: 5px" class="animate">The <b>concept of Logic</b> is <i>inherently present</i> in <b>all technological advancements</b>.</br></br> Since the foundation of traditional logic by Aristotle, where every idea had to be either True or False, Logic has been <b>increasingly embedded</b> in the realm of mathematics and ultimately has become <b>integral</b> to the foundations of <b>advanced technology</b>.</br></br> Hence, a field such as <b>Principles of Programming, Logic and Verification</b> which is <i>focused on the development</i> of Logic is going to play a role of <b>increasing importance</b> in the modern world, as our technologies become <b>more</b> and <b>more complex</b>.
+				<br></br>
+			For example, considering the <i>ever-increasing</i> amount of information available, scientists and engineers are <b>constantly seeking</b> to <b>improve</b> the <i>methods of processing data</i> to keep up with the <b>increased demand</b>. Consequently, developments in PPLV regarding resource management have <b>gained huge importance</b> in the modern world. <br>
+			If we want to <b>sustain technological innovation</b>, and develop <i>faster</i> and <i>smarter</i> digital systems, research into the field of PPLV is a <b>must</b>.</p>
+
+				<p  style="font-size: 1.3em; line-height: 2.2em; padding: 5px" class="animate">UCL also plays a significant role in PPLV research - find out more:</p>
+				<p></p>
+				<a class="btn btn-lg buttonBlue shadowHeavy" href="research.html" class="animate">About UCL's PPLV Dept.</a>
+		</div>
+	</div>
+
+	<div class="row visible-xs beauty-text">
+		<div class="col-md-12 text-center mainPage animate shadowLight" style="z-index: 4; background-color: #FFFFFF;">
+			<h3 class="animate">Closing words</h3>
+			<p  style="" class="animate">The <b>concept of Logic</b> is <i>inherently present</i> in <b>all technological advancements</b>.</br></br> Since the foundation of traditional logic by Aristotle, where every idea had to be either True or False, Logic has been <b>increasingly embedded</b> in the realm of mathematics and ultimately has become <b>integral</b> to the foundations of <b>advanced technology</b>.</br></br> Hence, a field such as <b>Principles of Programming, Logic and Verification</b> which is <i>focused on the development</i> of Logic is going to play a role of <b>increasing importance</b> in the modern world, as our technologies become <b>more</b> and <b>more complex</b>.
+				<br></br>
+			For example, considering the <i>ever-increasing</i> amount of information available, scientists and engineers are <b>constantly seeking</b> to <b>improve</b> the <i>methods of processing data</i> to keep up with the <b>increased demand</b>. Consequently, developments in PPLV regarding resource management have <b>gained huge importance</b> in the modern world. <br>
+			If we want to <b>sustain technological innovation</b>, and develop <i>faster</i> and <i>smarter</i> digital systems, research into the field of PPLV is a <b>must</b>.</p>
+
+				<p  style="font-size: 1.3em; line-height: 2.2em; padding: 5px" class="animate">UCL also plays a significant role in PPLV research - find out more:</p>
+				<p></p>
+				<a class="btn btn-lg buttonBlue shadowHeavy" href="research.html" class="animate">About UCL's PPLV Dept.</a>
+		</div>
+	</div>
+</div>
+
+<div class="footer shadowLight navBlue" style="z-index: 12; margin-left: -50;">
+<div class="row">
+	<div class="col-md-6 col-xs-9 hidden-xs" style="color: #ffffff;">
+		<h4>Site Navigation</h4>
+
+
+		<div class="col-md-3 col-xs-3" style="color: #ffffff; margin-left: 20px; padding-right: 0px;">
+			<p><a href="index.html" style="color: #ffffff;" class="transition">Home</a></p>
+			<p><a href="meta.html#aboutus" style="color: #ffffff;" class="transition">About Us</a></p>
+		</div>
+
+		<div class="col-md-3 col-xs-3" style="color: #ffffff;">
+			<p><a href="research.html" style="color: #ffffff;" class="transition">UCL Research Team</a></p>
+			<p><a href="meta.html#contact" style="color: #ffffff;" class="transition">Contact Us</a></p>
+		</div>
+
+		<div class="col-md-3 col-xs-3" style="color: #ffffff;" class="transition">
+			<p><a href="meta.html#citations" style="color: #ffffff;" class="transition">References Page</a></p>
+		</div>
+	</div>
+
+
+
+	<div class="visible-xs col-xs-12 col-sm-12" style="color: #ffffff;">
+		<h4 style="text-align: center;">Site Navigation</h4>
+		<ul style="list-style: none; text-align:center; margin-left:-30px;">
+
+
+
+
+			<li><a href="index.html" style="color: #ffffff;" class="transition">Home</a></li>
+			<li><a href="meta.html#aboutus" style="color: #ffffff;" class="transition">About Us</a></li>
+
+
+			<li><a href="research.html" style="color: #ffffff;" class="transition">UCL Research Team</a></li>
+			<li><a href="meta.html#contact" style="color: #ffffff;" class="transition">Contact Us</a></li>
+
+
+
+			<li><a href="meta.html#citations" style="color: #ffffff;" class="transition">References Page</a></li>
+
+
+	</ul>
+
+
+
+	</div>
+
+	<div class="col-xs-12 visible-xs center-block" style="text-align: center; padding: 0vw 30vw;">
+	<h3>Made as part of UCL's IEP</h3>
+	<p>Creative Commons License</p>
+	</div>
+
+
+
+		<div class="row">
+			<div class="col-xs-3 hidden-xs pull-right">
+			<h3>Made as part of UCL's IEP</h3>
+			<p>Creative Commons License</p>
+			</div>
+
+		</div>
+
+
+
+</div>
+</div>
+</body>
+</html>

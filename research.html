@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+<html style="background-color: #BBDEFB">
+<head>
+<title>PPLV - UCL Research Team</title>
+
+<!-- Viewport settings, makes phone resposive displays -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<link rel="icon" href="./img/favi.png">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<!--JS plugins -->
+<script src="./js/jquery.transit.min.js"></script>
+
+
+
+
+
+
+
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<!-- custom theme -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+<!--Smooth Transition JS -->
+<script>
+	$(document).ready(function() {
+    effect = $(".animate").transition({opacity: 0}, 0);
+		effectslow = $(".animate-slow").transition({opacity: 0}, 0);
+
+		effect.each(function(i) {
+				a = $(this).offset().top + $(this).height()/2;
+				b = $(window).scrollTop() + $(window).height();
+				if (a < b) $(this).transition({opacity:  1}, 500);
+		});
+
+  $(window).scroll(function(d,h) {
+      effect.each(function(i) {
+          a = $(this).offset().top + $(this).height()/2;
+          b = $(window).scrollTop() + $(window).height();
+          if (a < b) $(this).transition({opacity:  1}, 500);
+      });
+  });
+
+	effectslow.each(function(i) {
+			a = $(this).offset().top - $(this).height()/8;
+			b = $(window).scrollTop() + $(window).height();
+			if (a < b) $(this).transition({opacity:  1}, 500);
+	});
+
+	$(window).scroll(function(d,h) {
+		effectslow.each(function(i) {
+				a = $(this).offset().top - $(this).height()/8;
+				b = $(window).scrollTop() + $(window).height();
+				if (a < b) $(this).transition({opacity:  1}, 500);
+		});
+	});
+
+
+
+
+	$(document).click(function(e) {
+	    if (!$(e.target).is('a')) {
+	        $('.collapse').collapse('hide');
+	    }
+	});
+
+	});
+</script>
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div class="navbar navbar-fixed-top">
+	<div class="container-fluid navBlue"  id="navi" style="z-index: 12;">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcollapse" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span> Menu </span>
+			</button>
+			 <a class="navbar-brand navBlue transition" href="index.html">PPLV</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navcollapse">
+			<ul class="nav navbar-nav navbar-center">
+				<li class="dropdown"></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right navBlue" style="text-align: center;">
+				<li class=""><a href="index.html" class="transition">Home</a></li>
+
+
+				<li><a href="index.html#about" class="transition">About the Area</a></li>
+
+				<li><a href="history.html" class="transition">History of Area</a></li>
+
+				<li class="active"><a href="research.html" class="transition">UCL Research Team</a></li>
+
+				<li><a href="research.html#impact" class="transition">Impact</a></li>
+
+				<li><a href="meta.html" class="transition">About this site</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- site content -->
+<div class="container" id="content">
+	<!-- hero image - what is PPLV + explanation -->
+	<div id="main" style="margin-top: 0px;">
+	<div class="row">
+		<div class="col-md-12 text-center shadowLight primaryBlue" style="z-index: 10; font-family: 'Open Sans', sans-serif;">
+			<h1>UCL PPLV Research Area</h1>
+			<p style="font-size: 1.14em; line-height: 1.7em;"></br>The UCL Research Team is leading new developments into this field.</br> Particularly of note, Peter O'Hearn of the UCL PPLV research team developed Separation Logic which as has facilitated the development of programs to verify programs written in imperative programming languages. Members of the UCL PPLV research team were also directly involved in developing Facebook's INFER program, implementing separation logic which is used to ensure that phone applications can be developed quickly. </br></p>
+			<h4>Find out about them and their research below...</h4>
+
+		</div>
+
+	</div>
+	</div>
+
+	<!-- what will this site tell you? -->
+	<div class="row shadowLight">
+		<div class="col-md-12 animate" style="z-index: 8; background-color: #FFFFFF;">
+            <center> <h3>Key Researchers</h3>
+							<p style="font-size: 1.14em; line-height: 1.7em;">For the sake of brevity, we've only been able to include a few of the main researchers in the UCL department. With a subject like PPLV, all research done in the area has significant impacts on the field of computer science, so we've selected a few of the researchers whose research we found particularly interesting.
+							</p>
+						</center>
+		</div>
+		<div class="col-md-12" style="z-index: 8; background-color: #FFFFFF;" style="height:200px; width: 200px; margin-bottom: 10px; margin-top: 5px;">
+			<div class="col-md-4" style="z-index: 8; background-color: #FFFFFF;">
+			<img src="./img/DavidPym.jpg" class="img-fluid center-block shadowLight img-circle" style="height:200px; width: 200px; margin-bottom: 10px; margin-top: 5px;"></img>
+		</div>
+		<div class="col-md-8 hidden-xs beauty-text" style="z-index: 8; background-color: #FFFFFF;">
+			<h4 style="font-size: 1.9em;"><b>Professor David Pym</b></h4>
+			<p style="font-size: 1.3em; line-height: 1.7em;"> The current head of PPLV and one of the foremost Researchers in this field, David Pym has played crucial roles through his proposition of Bunched Logic<sup>[<a href="meta.html#h4-research">1</a>]</sup>, a variant of Logic which has aided the development of verification tools. David is currently looking into Economic implementations of Computational Logic, as well as further researching into his areas of interest including Security Management, Logic, and Systems Modelling.   </p>
+		</div>
+		<div class="col-md-8 visible-xs beauty-text" style="z-index: 8; background-color: #FFFFFF;">
+			<h4 style="font-size: 1.9em; text-align:center;"><b>Professor David Pym</b></h4>
+			<p style="font-size: 1.2em; line-height: 1.5em; text-align:center;"> The current head of PPLV and one of the foremost Researchers in this field, David Pym has played crucial roles through his proposition of Bunched Logic, a variant of Logic which has aided the development of verification tools. David is currently looking into Economic implementations of Computational Logic, as well as further researching into his areas of interest including Security Management, Logic, and Systems Modelling.   </p>
+		</div>
+		</div>
+		<div class="col-md-12" style="z-index: 8; background-color: #FFFFFF;"  style="height:200px; width: 200px; margin-bottom: 10px; margin-top: 5px;">
+			<div class="col-md-4" style="z-index: 8; background-color: #FFFFFF;">
+			<img src="./img/PeterOhearn.jpg" class="img-fluid center-block shadowLight img-circle" style="height:200px; width: 200px; margin-bottom: 20px; margin-top: 10px;"></img>
+		</div>
+		<div class="col-md-8 hidden-xs beauty-text" style="z-index: 8; background-color: #FFFFFF;">
+			<h4 style="font-size: 1.9em;"><b>Professor Peter O'Hearn</b></h4>
+			<p style="font-size: 1.3em; line-height: 1.7em;"> Peter O’Hearn also proposed the concept of Bunched Logic as well as Separation Logic<sup>[<a href="meta.html#h4-research">2</a>]</sup>, which have further contributed to the development of automated verification. Peter is most notably known for being the Engineering Manager for Facebook, aiding the development of Facebook’s static analyser tool, Facebook Infer, used by prominent companies such as Facebook, Instagram and Whatsapp.</p>
+		</div>
+		<div class="col-md-8 visible-xs beauty-text" style="z-index: 8; background-color: #FFFFFF;">
+			<h4 style="font-size: 1.9em; text-align:center;"><b>Professor Peter O'Hearn</b></h4>
+			<p style="font-size: 1.2em; line-height: 1.5em; text-align:center;"> Peter O’Hearn also proposed the concept of Bunched Logic as well as Separation Logic, which have further contributed to the development of automated verification. Peter is most notably known for being the Engineering Manager for Facebook, aiding the development of Facebook’s static analyser tool, Facebook Infer, used by prominent companies such as Facebook, Instagram and Whatsapp.</p>
+		</div>
+		</div>
+
+
+
+	</div>
+
+	<!-- why does this site exist? -->
+
+	<div class="row shadowLight"  id="impact">
+		<div class="col-md-12 impact" style="z-index: 6; background-color: #d1ecff; padding-bottom: 5px;">
+			<center>
+		<div class="divider shadowLight" style="padding-left: 15px; padding-right: 15px;">
+			<h3><b>Impacts</b></h3>
+
+			<p style="font-size: 1.3em; line-height: 1.7em;">
+			As PPLV is centered around improving the logical concepts behind Computer Science, research done by PPLV has impacts over a huge breadth of fields. We've chosen to include a couple impacts that we found the most interesting below. Hopefully this should help you to get an idea of what the PPLV department does.</p>
+</div>
+
+		<div class="divider shadowLight beauty-text" style="padding-left: 15px; padding-right: 15px;">
+            <h4 style="font-size: 1.3em; line-height: 1.7em;"><strong> Gaming Market ( Boosted automatic verification Research Project )</strong><sup>[<a href="meta.html#h4-research">3</a>]</sup></h4>
+<p align="" style="font-size: 1.14em; line-height: 1.7em;">
+<br>The core code (known as kernel code) for the Graphical Processing Unit (GPU)<sup>[<a href="meta.html#h4-research">4</a>]</sup>, is responsible for ensuring a high frame rate, smooth gameplay and a good visual appearance. This code is now being developed by automatic verification algorithms developed by researchers in PPLV.<br></br>
+The kernel code is the low level code required for the GPU to function - previously it was developed and tested by humans, however, thanks to PPLV, it is now being developed using automatic verification algorithms. These algorithms find a way to maximise memory usage and identify bugs faster than any human could.</br></br>
+These increases in efficiency may be one of the main factors in the UK gaming industry's recent economic growth - there is currently a high demand for GPUs.
+</p>
+</div>
+		<div class="divider shadowLight beauty-text" style="padding-left: 15px; padding-right: 15px;">
+<h4 style="font-size: 1.3em; line-height: 1.7em;"><strong>  Phone industry ( Program Verification Research Project )</strong> <sup>[<a href="meta.html#h4-research">5</a>]</sup></h4>
+<p align="" style="font-size: 1.14em; line-height: 1.7em;">
+<br>Researchers at UCL also helped to develop Separation Logic and Bunched Logic, which are revolutionary new Logical models which allow imperative programs (written in languages such as C, Python, etc.) to be automatically verified.</br></br> The results of these discoveries are used by FaceBook in their <a>INFER project</a>, which is used to check phone applications for memory leaks and other problems. This facilitates the quick development of code for mobile devices. Currently there are over 250,000,000 android phones alone in use, all running similarly checked software, so it's easy to see how this development has actually shaped the modern world as we know it.
+</p>
+</div>
+		<div class="divider shadowLight beauty-text" style="padding-left: 15px; padding-right: 15px;">
+<h4 style="font-size: 1.3em; line-height: 1.7em;"><strong>  Business Sector ( Algebra and Logic for Policy and Utility in Information Security Project )</strong> <sup>[<a href="meta.html#h4-research">6</a>]</sup></h4>
+ <p align="" style="font-size: 1.14em; line-height: 1.7em;">
+By producing a universal way of representing security issues within a system, managers within the industry can more easily model their policies to be sustainable, effective and affordable.</br></br> For example  environmental policies such as recycling machines and paper and conforming to specific laws within a country. By using algebra and logic as a foundation to create models this addresses security flaws within organisations in relation to national laws, regulations and agreements.
+    </p>
+</div>
+<div class="divider shadowLight" style="padding-left: 15px; padding-right: 15px; margin-top: 60px">
+	<h3><b>Research Projects</b></h3>
+
+	<p style="font-size: 1.3em; line-height: 1.7em;" id="projects">
+	As stated before, research done by PPLV can cover a wide variety of fields. We've included some explanatory videos on the projects we found the most interesting.</p>
+</div>
+
+
+
+</center>
+
+
+
+
+
+		<div class="col-md-6 impact" style="z-index: 6; background-color: #d1ecff">
+			<div class="embed-responsive embed-responsive-16by9" >
+				<iframe class="embed-responsive-item shadowLight"  src="http://www.youtube.com/embed/mu7JYa7qwaQ"></iframe>
+			</div>
+			<div class="separator shadowLight beauty-text">
+				<center>
+			<h3>Resource Management</h3>
+
+			<p>
+
+			Developing automated methods of replicating the process done by programmers as they analyse the way their program handles resources or extending current computational logical models (separation logic, bunched logic) to other fields - such as using it to manage food or financial resources.
+
+		</p>
+	</center>
+			</div>
+		</div>
+
+
+		<div class="col-md-6 impact" style="z-index: 6; background-color: #d1ecff">
+			<div class="embed-responsive embed-responsive-16by9" >
+				<iframe class="embed-responsive-item"  src="http://www.youtube.com/embed/c19hpsvr8Qg"></iframe>
+			</div>
+
+			<div class="separator shadowLight beauty-text">
+				<center>
+			<h3>Productive Security</h3>
+			<p>
+			Developing systems to determine the actual effectiveness of security measures based off previous data - which unlike current frameworks in place accounts for the "missing link" variables such as employee workload and risk perception to more accurately predict employee behaviour.</p>
+		</center>
+			</div>
+		</div>
+		<div class="col-md-6 impact" style="z-index: 6; background-color: #d1ecff; height:100;">
+			<div class="embed-responsive embed-responsive-16by9" >
+				<iframe class="embed-responsive-item"  src="http://www.youtube.com/embed/k0of2Xrg0jM"></iframe>
+			</div>
+			<div class="separator shadowLight beauty-text">
+				<center>
+			<h3>Concurrent Program verification</h3>
+			<p>
+			Developing new automated methods of checking whether code is semantically correct (does what it's meant to) using Separation Logic. Current methods rely on hard coded identifiers for data structures which means that the verification will fail if an unknown data structure is found.</p>
+		</center>
+			</div>
+
+		</div>
+		<div class="col-md-6 impact" style="z-index: 6; background-color: #d1ecff">
+			<div class="embed-responsive embed-responsive-16by9" >
+				<iframe class="embed-responsive-item"  src="http://www.youtube.com/embed/aElfL4nXzkQ"></iframe>
+			</div>
+			<div class="separator shadowLight beauty-text">
+				<center>
+			<h3>Algebra and Logic for Info-Security</h3>
+			<p>
+			Exploring the idea of how Algebra and Logic is observed within Information Security, in this case combinatorics of passwords, and how Policies may arise to essentially make unauthorized access to an account more difficult and hence secure.</p>
+		</center>
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- get started -->
+	<!--
+	<div class="row">
+		<div class="col-md-12 text-center shadowLight" style="z-index: 4; background-color: #FFFFFF;">
+			<h3>PPLV</h3>
+			<p>As you can see, PPLV is an area under constant research - any and every development in this field has significant impacts on the field of Computer Science.</p>
+
+            <h3> The Future...</h3>
+            <p> Some possible future developments that UCL might look into are self-driving cars. This will require car verification techniques to produce accurate models and alogorithms to prevent vechiles from crashing as well as allowing them to accelerate, deacclerate, turn and stop. Other companies such as Google have already started creating driveless cars.</p>
+
+            <br>
+
+            <h2> <i>Interesting Fact: The total Budget for UCL PPLV is £6,175,321!! </i></h2>
+
+
+			<a class="btn btn-lg buttonBlue shadowHeavy" href="meta.html">About this Site</a>
+		</div>
+	</div> -->
+	<div class="row hidden-xs">
+		<div class="col-md-12 text-center mainPage animate shadowLight beauty-text" style="z-index: 4; background-color: #FFFFFF;">
+			<h3 class="animateslow">What Next?</h3>
+			<p  style="font-size: 1.3em; line-height: 2.2em; padding: 5px" class="animate">As you can see, PPLV is a research area under constant development by some of the best researchers in the world. It's research has huge impacts on how computers programs are developed and tested.</br>
+			UCL's PPLV research department plays a key role in this field, with many of it's researchers having worked on projects that have literally changed the world. To us, as undergrad Computer Science students, it's humbling to see how approachable these foremost researchers are, and how willing they were to offer us advice on building this website.</br>
+			Looking toward the future, possible new projects in the field of PPLV may be with relation to self-driving cars. With recent improvements in self-driving car technologies and companies such as Google beginning to create the first self-driving cars, self-driving cars seem to be just around the corner - however before we adopt this technology, we have to devise methods of ensuring that these algorithms will not lead to a crash.</p>
+
+				<p  style="font-size: 1.3em; line-height: 2.2em; padding: 5px" class="animate"></p>
+				<p></p>
+				<p class="animateslow">We've also included a brief section about this page and it's authors:</p>
+				<a class="btn btn-lg buttonBlue shadowHeavy" href="meta.html" class="animate">About the Site</a>
+		</div>
+	</div>
+
+	<div class="row visible-xs">
+		<div class="col-md-12 text-center mainPage animate shadowLight" style="z-index: 4; background-color: #FFFFFF;">
+			<h3 class="animateslow">What Next?</h3>
+			<p class="animateslow">As you can see, PPLV is a research area under constant development by some of the best researchers in the world. It's research has huge impacts on how computers programs are developed and tested.</br></br>
+			UCL's PPLV research department plays a key role in this field, with many of its researchers having worked on projects that have literally changed the world. To us, as undergrad Computer Science students, it's humbling to see how approachable these foremost researchers are, and how willing they were to offer us advice on building this website.</br></br>
+			Looking toward the future, possible new projects in the field of PPLV may be with relation to self-driving cars. With recent improvements in self-driving car technologies and companies such as Google beginning to create the first self-driving cars<sup>[<a href="meta.html#h4-research">7</a>]</sup>, self-driving cars seem to be just around the corner - however before we adopt this technology, we have to devise methods of ensuring that these algorithms will not lead to a crash.</p>
+
+				<p class="animateslow"></p>
+				<p></p>
+				<p class="animate">We've also included a brief section about this website and its authors:</br></p>
+				<a class="btn btn-lg buttonBlue shadowHeavy" href="meta.html" class="animate">About the Site</a>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+<div class="footer shadowLight navBlue" style="z-index: 12; margin-left: -50;">
+<div class="row">
+	<div class="col-md-6 col-xs-9 hidden-xs" style="color: #ffffff;">
+		<h4>Site Navigation</h4>
+
+
+		<div class="col-md-3 col-xs-3" style="color: #ffffff; margin-left: 20px; padding-right: 0px;">
+			<p><a href="index.html" style="color: #ffffff;" class="transition">Home</a></p>
+			<p><a href="meta.html#aboutus" style="color: #ffffff;" class="transition">About Us</a></p>
+		</div>
+
+		<div class="col-md-3 col-xs-3" style="color: #ffffff;">
+			<p><a href="research.html" style="color: #ffffff;" class="transition">UCL Research Team</a></p>
+			<p><a href="meta.html#contact" style="color: #ffffff;" class="transition">Contact Us</a></p>
+		</div>
+
+		<div class="col-md-3 col-xs-3" style="color: #ffffff;" class="transition">
+			<p><a href="meta.html#citations" style="color: #ffffff;" class="transition">References Page</a></p>
+		</div>
+	</div>
+
+
+
+	<div class="visible-xs col-xs-12 col-sm-12" style="color: #ffffff;">
+		<h4 style="text-align: center;">Site Navigation</h4>
+		<ul style="list-style: none; text-align:center; margin-left:-30px;">
+
+
+
+
+			<li><a href="index.html" style="color: #ffffff;" class="transition">Home</a></li>
+			<li><a href="meta.html#aboutus" style="color: #ffffff;" class="transition">About Us</a></li>
+
+
+			<li><a href="research.html" style="color: #ffffff;" class="transition">UCL Research Team</a></li>
+			<li><a href="meta.html#contact" style="color: #ffffff;" class="transition">Contact Us</a></li>
+
+
+
+			<li><a href="meta.html#citations" style="color: #ffffff;" class="transition">References Page</a></li>
+
+
+	</ul>
+
+
+
+	</div>
+
+	<div class="col-xs-12 visible-xs center-block" style="text-align: center; padding: 0vw 30vw;">
+	<h3>Made as part of UCL's IEP</h3>
+	<p>Creative Commons License</p>
+	</div>
+
+
+
+		<div class="row">
+			<div class="col-xs-3 hidden-xs pull-right">
+			<h3>Made as part of UCL's IEP</h3>
+			<p>Creative Commons License</p>
+			</div>
+
+		</div>
+
+
+
+</div>
+</div>
+</body>
+</html>
